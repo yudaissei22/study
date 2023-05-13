@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+typedef struct node{
+	int data;
+	struct node* next;
+}node;
+
+void print_list(node *head){
+
+}
+
+void insert_after(node *head, node *target, node *new_node){
+  for(node *p = head; p != NULL; p = p->next){
+    if(p == target){
+      new_node->next = p->next;
+      p->next = new_node;
+    }
+  } 
+}
+#線形リストのため、先頭(head)から一つづつ辿っていく。
+#targetよりpのほうが文字数少ない
+#入れ替えはそれぞれが何を指しているか意識して慎重に。
+
+void remove_node(node *head, node *target){
+  for(node *p = head; p != NULL; p = p->next){
+    if(p == target){
+      p->next = p->next->next;
+
+}}
+  
+}
+
+int main(){
+
+}

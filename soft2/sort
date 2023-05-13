@@ -1,0 +1,26 @@
+#選択ソート...一番小さい値を探して一番左へを繰り返す。
+#手順
+#1.n個の配列の中から一番小さい値を探して、一番左のものと入れ替える。
+#2.n-1個の配列の中からもっとも小さい値を探して、2番目のものと入れ替える。
+#3.これをn-1回繰り返す。
+
+#include<stdio.h>
+
+int *read_array(char *fname, int *num, int *len);
+void print_array(int num[], int length);
+void selection_sort(int *num, int length);
+
+int main(){}
+
+void selection_sourt(int *num, int length){
+  for(int i = 0; i < length; i++){
+    if(num[i] > num[i+1]){
+      swap(num[i}], num[i+1]);
+    }
+  }
+
+
+
+
+
+}

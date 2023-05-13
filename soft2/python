@@ -1,0 +1,13 @@
+#選択ソート
+
+import random
+
+def selection_sor(num){
+    for i in range(len(num)):
+    	min = min[i] #仮の最小値
+	min_pos = i  #仮の最小値の場所
+	for n in range(i+1, len(num)):
+	    if num[n] < num[i]
+	       min = min[n]
+	       min_pos = n
+	
